@@ -14,9 +14,9 @@
 
 ## About
 
-Managing Partner & Head of AI at [Electi Consulting](https://electiconsulting.com/). 14+ years building and fixing AI systems for organizations where failure is not an option — the [European Central Bank](https://www.ecb.europa.eu/), [MSC Mediterranean Shipping](https://www.msc.com/), [Hellenic Bank](https://www.hellenicbank.com/), and others. I audit, remediate, and optimize mission-critical ML pipelines end to end.
+Managing Partner & Head of AI at [Electi Consulting](https://electiconsulting.com/). 14+ years building and fixing AI systems across finance, autonomous driving, telecom, IoT, and shipping — for the [European Central Bank](https://www.ecb.europa.eu/), [MSC Mediterranean Shipping](https://www.msc.com/), [Hellenic Bank](https://www.hellenicbank.com/), [EuroBank](https://www.eurobank.gr/), and others. Methodical, mathematically grounded, and relentlessly practical — I bridge the gap between algorithmic theory and production reality.
 
-My work spans from [CVPR publications](https://github.com/NikolasMarkou/blind_image_denoising) and novel neural architectures to GPU-optimized inference pipelines in C++/CUDA/TensorRT. On the GenAI side: LLM/RAG frameworks, agentic system architecture, containment and security for high-stakes deployments. [US patent holder](https://patents.google.com/patent/US10051414B2/). MSc with Distinction from [Imperial College London](https://www.imperial.ac.uk/). Expert Advisor to the [Cyprus National AI Taskforce](https://dmrid.gov.cy/).
+My work spans from real-time computer vision and object detection pipelines to novel neural architectures and GPU-optimized inference in C++/CUDA/TensorRT. On the GenAI side: LLM/RAG frameworks, agentic system architecture, containment and security for high-stakes deployments. I also conduct AI due diligence for M&A and startup valuations. Every solution is field-tested and production-proven before it ships. [US patent holder](https://patents.google.com/patent/US10051414B2/). MSc with Distinction from [Imperial College London](https://www.imperial.ac.uk/). Expert Advisor to the [Cyprus National AI Taskforce](https://dmrid.gov.cy/).
 
 ## Core Technologies
 
@@ -45,7 +45,7 @@ My work spans from [CVPR publications](https://github.com/NikolasMarkou/blind_im
 
 ## What I Do
 
-**Audit & Due Diligence** — Forensic analysis of ML pipelines, neural networks, and data systems for bias, instability, and inefficiency.
+**Audit & Due Diligence** — Forensic analysis of ML pipelines, neural networks, and data systems for bias, instability, and inefficiency. M&A and startup valuation assessments.
 
 **Remediation & Optimization** — Deep neural graph surgery, re-architecture for scalability, GPU optimization (CUDA, TensorRT, ONNX).
 
@@ -57,7 +57,7 @@ My work spans from [CVPR publications](https://github.com/NikolasMarkou/blind_im
 |:---|:---:|:---|
 | [dl_techniques](https://github.com/NikolasMarkou/dl_techniques) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/dl_techniques?style=flat-square&label=) | Advanced deep learning library for Keras 3 / TensorFlow |
 | [fsm_llm](https://github.com/NikolasMarkou/fsm_llm) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/fsm_llm?style=flat-square&label=) | Finite State Machine hybrid with LLMs |
-| [blind_image_denoising](https://github.com/NikolasMarkou/blind_image_denoising) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/blind_image_denoising?style=flat-square&label=) | CVPR 2020 paper implementation — bias-free CNN denoising |
+| [blind_image_denoising](https://github.com/NikolasMarkou/blind_image_denoising) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/blind_image_denoising?style=flat-square&label=) | Bias-free CNN blind image denoising |
 | [iterative-planner](https://github.com/NikolasMarkou/iterative-planner) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/iterative-planner?style=flat-square&label=) | State-machine driven iterative planning and execution protocol |
 | [epistemic-deconstructor](https://github.com/NikolasMarkou/epistemic-deconstructor) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/epistemic-deconstructor?style=flat-square&label=) | Claude skill for reverse engineering systems |
 | [multiscale_variational_autoencoder](https://github.com/NikolasMarkou/multiscale_variational_autoencoder) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/multiscale_variational_autoencoder?style=flat-square&label=) | Multiscale VAE for image generation |
@@ -67,7 +67,6 @@ My work spans from [CVPR publications](https://github.com/NikolasMarkou/blind_im
 ## Credentials
 
 - **US Patent** — [Wireless terminal location](https://patents.google.com/patent/US10051414B2/) (2018)
-- **CVPR 2020** — [Robust and Interpretable Blind Image Denoising via Bias-Free CNNs](https://github.com/NikolasMarkou/blind_image_denoising)
 - **Expert Advisor** — [Cyprus National AI Taskforce](https://dmrid.gov.cy/) (2025 -- Present)
 - **MSc Advanced Computing (Distinction)** — [Imperial College London](https://www.imperial.ac.uk/), thesis under Prof. Maja Pantic
 - **UCL Centre for Blockchain Technologies** — Industry Associate & co-author, Internet of Value Report
