@@ -74,9 +74,6 @@ My work spans from [CVPR publications](https://github.com/NikolasMarkou/blind_im
 
 ## Selected Writing & Talks
 
-- [Keras 3 Mastery: Building Production-Grade Custom Layers and Models](https://nikolasmarkou.name/keras-3-mastery-building-production-grade-custom-layers-and-models/)
-- [Neural Network Architectures: SOM vs Transformer vs Modern Hopfield](https://nikolasmarkou.name/a-guide-to-three-neural-network-architectures-self-organizing-maps-transformers-and-modern-hopfield-networks/)
-- [RAG Concepts](https://nikolasmarkou.name/rag-concepts/)
 - "AI from the Trenches" — IMH / CYIT, March 2025
 - "HPC for Hyperparameter Search" — NCC Romania, March 2024
 
