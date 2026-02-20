@@ -53,16 +53,29 @@ My work spans from real-time computer vision and object detection pipelines to n
 
 ## Featured Repositories
 
-| Repository | Stars | Description |
-|:---|:---:|:---|
-| [dl_techniques](https://github.com/NikolasMarkou/dl_techniques) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/dl_techniques?style=flat-square&label=) | Advanced deep learning library for Keras 3 / TensorFlow |
-| [fsm_llm](https://github.com/NikolasMarkou/fsm_llm) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/fsm_llm?style=flat-square&label=) | Finite State Machine hybrid with LLMs |
-| [blind_image_denoising](https://github.com/NikolasMarkou/blind_image_denoising) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/blind_image_denoising?style=flat-square&label=) | Bias-free CNN blind image denoising |
-| [iterative-planner](https://github.com/NikolasMarkou/iterative-planner) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/iterative-planner?style=flat-square&label=) | State-machine driven iterative planning and execution protocol |
-| [epistemic-deconstructor](https://github.com/NikolasMarkou/epistemic-deconstructor) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/epistemic-deconstructor?style=flat-square&label=) | Claude skill for reverse engineering systems |
-| [multiscale_variational_autoencoder](https://github.com/NikolasMarkou/multiscale_variational_autoencoder) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/multiscale_variational_autoencoder?style=flat-square&label=) | Multiscale VAE for image generation |
-| [crystal](https://github.com/NikolasMarkou/crystal) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/crystal?style=flat-square&label=) | Novel DL initialization based on simplex geometry |
-| [cashflow-app](https://github.com/NikolasMarkou/cashflow-app) | ![Stars](https://img.shields.io/github/stars/NikolasMarkou/cashflow-app?style=flat-square&label=) | Cash flow forecasting with LLM-ready explainability |
+### [dl_techniques](https://github.com/NikolasMarkou/dl_techniques)
+Production-ready deep learning framework consolidating 150+ model implementations, 290+ specialized layers, and 20+ loss functions into a single Keras 3 / TensorFlow library. Includes a factory system for single-line component swapping (15+ attention mechanisms, 10+ FFN types), the novel AnyLoss framework for direct metric optimization on imbalanced datasets, and a six-dimensional ModelAnalyzer for training diagnostics. 600+ tests. Sponsored by Electi Consulting.
+
+### [fsm_llm](https://github.com/NikolasMarkou/fsm_llm)
+Python framework that combines Finite State Machines with Large Language Models for structured, stateful conversational AI. FSMs are defined declaratively in JSON, with JsonLogic-based conditional transitions, hierarchical FSM stacking, and lifecycle hooks. Supports 100+ LLM providers via LiteLLM. Includes built-in prompt injection defense and token-aware history management.
+
+### [blind_image_denoising](https://github.com/NikolasMarkou/blind_image_denoising)
+Bias-free CNN library for blind image denoising, based on the CVPR 2020 bias-free CNN paper. Removing all bias terms makes every output a pure weighted combination of input pixels, providing full interpretability. Supports multi-scale processing via Laplacian and Gaussian pyramids, with three custom regularizers (soft orthogonal, effective receptive field). Achieves up to 57% MAE reduction across noise levels 20–80. Deployable via TFLite.
+
+### [iterative-planner](https://github.com/NikolasMarkou/iterative-planner)
+Claude Code skill that replaces linear AI coding execution with a disciplined state-machine cycle: Explore, Plan, Execute, Reflect, Re-plan. Filesystem-based persistent memory survives context window exhaustion. Enforces complexity budgets, a 2-fix autonomy leash, decision anchoring in code, and cross-plan knowledge transfer — preventing the runaway fix accumulation and context rot that derail complex AI-assisted tasks.
+
+### [epistemic-deconstructor](https://github.com/NikolasMarkou/epistemic-deconstructor)
+Claude Code skill implementing a 6-phase scientific protocol for reverse engineering unknown systems — from boundary mapping and causal analysis through parametric identification and validated model synthesis. Backed by 7 Python CLI tools (~6,300 lines), Bayesian hypothesis tracking with calibrated evidence rules, conformal prediction, and 27 reference documents. 191 unit tests. Scales across five tiers from 30-minute claim validation to 20+ hour comprehensive analysis.
+
+### [multiscale_variational_autoencoder](https://github.com/NikolasMarkou/multiscale_variational_autoencoder)
+Hierarchical VAE that decomposes images into a pyramid of per-scale latent representations — a learnable alternative to wavelet decomposition. Each resolution level has its own encoder/decoder with configurable blocks (Squeeze-Excite, MobileNet V2/V3, Self-Attention, ResNet). Reconstructs coarse-to-fine via residual merging with a composite multi-component loss function.
+
+### [crystal](https://github.com/NikolasMarkou/crystal)
+Novel deep learning weight initialization based on N-dimensional regular simplex geometry. An exact analytic eigenvalue calibration formula ensures the scaled Gram matrix has lambda_max ≈ 1.0, preventing vanishing/exploding gradients. O(N³) Givens rotations tested up to 1000 dimensions. Framework-agnostic (pure NumPy output).
+
+### [cashflow-app](https://github.com/NikolasMarkou/cashflow-app)
+Multi-account cash flow forecasting engine with a 5-layer pipeline: transfer netting, autonomous recurrence discovery (corrects corrupted upstream flags), decomposition into deterministic and residual components, multi-model competition (ETS, SARIMA, SARIMAX, TiRex ONNX), and trend-adjusted recomposition. Generates structured JSON explainability payloads designed for LLM consumption. 89.2% pass rate across 120 systematic validation runs at 10.2% average WMAPE. Includes a FastAPI web interface, CLI, and Python API.
 
 ## Credentials
 
