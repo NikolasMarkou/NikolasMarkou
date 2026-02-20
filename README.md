@@ -14,9 +14,9 @@
 
 ## About
 
-Managing Partner & Head of AI at [Electi Consulting](https://electiconsulting.com/). 14+ years building and fixing AI systems across finance, autonomous driving, telecom, IoT, and shipping — for the [European Central Bank](https://www.ecb.europa.eu/), [MSC Mediterranean Shipping](https://www.msc.com/), [Hellenic Bank](https://www.hellenicbank.com/), [EuroBank](https://www.eurobank.gr/), and others. Methodical, mathematically grounded, and relentlessly practical — I bridge the gap between algorithmic theory and production reality.
+Managing Partner & Head of AI at [Electi Consulting](https://electiconsulting.com/). 14+ years building and fixing AI systems across shipping, telecom, IoT, autonomous driving, computational photography, blockchain, and finance — for the [European Central Bank](https://www.ecb.europa.eu/), [MSC Mediterranean Shipping](https://www.msc.com/), [Hellenic Bank](https://www.hellenicbank.com/), [EuroBank](https://www.eurobank.gr/), and others. Each domain taught different engineering constraints — the accumulation is what makes the solutions hold.
 
-My work spans from real-time computer vision and object detection pipelines to novel neural architectures and GPU-optimized inference in C++/CUDA/TensorRT. On the GenAI side: LLM/RAG frameworks, agentic system architecture, containment and security for high-stakes deployments. I also conduct AI due diligence for M&A and startup valuations. Every solution is field-tested and production-proven before it ships. [US patent holder](https://patents.google.com/patent/US10051414B2/). MSc with Distinction from [Imperial College London](https://www.imperial.ac.uk/). Expert Advisor to the [Cyprus National AI Taskforce](https://dmrid.gov.cy/).
+Technical range: real-time computer vision and object detection pipelines, novel neural architectures, GPU-optimized inference in C++/CUDA/TensorRT, LLM/RAG frameworks, agentic system architecture, and containment for high-stakes GenAI deployments. I also conduct AI due diligence for M&A and startup valuations. 35+ open-source repositories — I ship code, not papers. [US patent holder](https://patents.google.com/patent/US10051414B2/). MSc with Distinction from [Imperial College London](https://www.imperial.ac.uk/). Expert Advisor to the [Cyprus National AI Taskforce](https://dmrid.gov.cy/).
 
 ## Core Technologies
 
@@ -82,7 +82,9 @@ Multi-account cash flow forecasting engine with a 5-layer pipeline: transfer net
 - **US Patent** — [Wireless terminal location](https://patents.google.com/patent/US10051414B2/) (2018)
 - **Expert Advisor** — [Cyprus National AI Taskforce](https://dmrid.gov.cy/) (2025 -- Present)
 - **MSc Advanced Computing (Distinction)** — [Imperial College London](https://www.imperial.ac.uk/), thesis under Prof. Maja Pantic
+- **BEng/MEng Computer Engineering** — [University of Patras](https://www.upatras.gr/)
 - **UCL Centre for Blockchain Technologies** — Industry Associate & co-author, Internet of Value Report
+- **First Lieutenant (Reserve)** — National Guard of Cyprus (2003–2005)
 
 ## Selected Writing & Talks
 
