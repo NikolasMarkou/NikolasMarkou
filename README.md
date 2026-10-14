@@ -18,7 +18,7 @@ Managing Partner & Head of AI at [Electi Consulting](https://electiconsulting.co
 
 Technical range spans real-time computer vision and object detection pipelines, novel neural architectures, GPU-optimized inference in C++/CUDA/TensorRT, LLM/RAG frameworks, agentic system architecture, and containment for high-stakes GenAI deployments. I also conduct AI due diligence for M&A and startup valuations.
 
-35+ open-source repositories. I ship code, not papers. [US patent holder]([https://patents.google.com/patent/US10051414B2/](https://patents.google.com/patent/US20180206074A1/en)). MSc with Distinction from [Imperial College London](https://www.imperial.ac.uk/). Expert Advisor to the [Cyprus National AI Taskforce](https://dmrid.gov.cy/).
+35+ open-source repositories. I ship code, not papers. [US patent holder]([https://patents.google.com/patent/US10051414B2/](https://patents.google.com/patent/US20180206074A1/en)). MSc with Distinction from [Imperial College London](https://www.imperial.ac.uk/). Expert Advisor to the [Cyprus National AI Taskforce]([https://dmrid.gov.cy/](https://www.investcyprus.org.cy/deputy-minister-welcomes-cabinet-formation-of-national-ai-taskforce/)) and published AI National strategy [here]([https://www.investcyprus.org.cy/deputy-minister-welcomes-cabinet-formation-of-national-ai-taskforce/](https://cyprus.ai/)).
 
 ## When to Reach Out
 
