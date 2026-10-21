@@ -95,8 +95,8 @@ Multi-account cash flow forecasting engine with a 5-layer pipeline: transfer net
 
 ## Credentials
 
-- **US Patent**, [Wireless terminal location](https://patents.google.com/patent/US10051414B2/) (2018)
-- **Expert Advisor**, [Cyprus National AI Taskforce](https://dmrid.gov.cy/) (2025 to present)
+- **US Patent**, [Wireless terminal location](https://patents.google.com/patent/US20180206074A1/en) (2018)
+- **Expert Advisor**, [Cyprus National AI Taskforce](https://cyprus.ai/) (2025 to present)
 - **MSc Advanced Computing (Distinction)**, [Imperial College London](https://www.imperial.ac.uk/). Thesis under Prof. Maja Pantic
 - **BEng/MEng Computer Engineering**, [University of Patras](https://www.upatras.gr/)
 - **UCL Centre for Blockchain Technologies**, Industry Associate and co-author of the Internet of Value Report
