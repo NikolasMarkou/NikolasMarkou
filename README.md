@@ -85,7 +85,12 @@ Python framework for conversations and agents that must follow a fixed structure
 ### Research and Novel Architectures
 
 ### [crystal](https://github.com/NikolasMarkou/crystal)
-Novel deep learning weight initialization based on N-dimensional regular simplex geometry. An exact analytic eigenvalue calibration formula ensures the scaled Gram matrix has lambda_max ≈ 1.0, preventing vanishing and exploding gradients. O(N³) Givens rotations tested up to 1000 dimensions. Framework-agnostic (pure NumPy output).
+NumPy library for building and manipulating regular N-dimensional simplexes as maximally separated, symmetric vector sets for neural networks. In a regular N-simplex the N+1 vertices are equidistant and every pair meets at cos θ = -1/N, so they approach orthogonality as N grows. v0.2, MIT, 70+ tests from 1D to 1000D.
+
+- **Exact eigenvalue calibration.** Auto-calibration sets the edge length to d = sqrt(2N), so the scaled Gram matrix MMᵀ/N has a maximum eigenvalue of exactly 1.0, keeping signal scale stable when the structure is stacked in deep networks.
+- **N-dimensional rotations.** Rotation matrices built from Givens rotations applied directly to rows, O(N³) instead of the earlier O(N⁵), plus a chainable `Simplex` class to rotate and offset the vertex set.
+- **Two documented ways to use it in Keras.** A frozen simplex classification head that is always full rank and correctly scaled, or trainable representations with a Gram-determinant volume loss that discourages dimensional collapse in open-set, contrastive and self-supervised setups.
+- **Framework-agnostic output.** Plain NumPy arrays, usable from any deep learning framework.
 
 ### [multiscale_variational_autoencoder](https://github.com/NikolasMarkou/multiscale_variational_autoencoder)
 Hierarchical VAE that decomposes images into a pyramid of per-scale latent representations, a learnable alternative to wavelet decomposition. Each resolution level has its own encoder and decoder with configurable blocks (Squeeze-Excite, MobileNet V2/V3, Self-Attention, ResNet). Reconstructs coarse-to-fine via residual merging with a composite multi-component loss.
