@@ -106,7 +106,14 @@ Claude Code skill that keeps an agent from losing the plot on long, hard tasks. 
 - **Dashboard.** A local, offline site with a live view of the running plan, every plan and ledger, search, and token usage per plan and per agent.
 
 ### [epistemic-deconstructor](https://github.com/NikolasMarkou/epistemic-deconstructor)
-Claude Code skill implementing a 6-phase scientific protocol for reverse engineering unknown systems: boundary mapping, causal analysis, parametric identification, and validated model synthesis. Backed by 7 Python CLI tools (~6,300 lines), Bayesian hypothesis tracking with calibrated evidence rules, conformal prediction, and 27 reference documents. 191 unit tests. Scales across five tiers from 30-minute claim validation to 20+ hour comprehensive analysis.
+Claude Code skill that turns "I don't know how this works" into a quantified, validated model of how it works. Hand Claude a black box (an API, a device, a forecast, a vendor claim) and it runs a structured scientific investigation, writing every hypothesis, probe and update to disk. The deliverable is a predictive model with uncertainty bounds that has been tested against a naive baseline, not a narrative summary. v7.16, GPLv3, 885 tests.
+
+- **Gated six-phase protocol.** Setup, boundary mapping, causal analysis, parametric identification, model synthesis and validation, plus sub-phases for domain orientation, scope interrogation and abductive expansion. Every phase has an exit gate enforced by script; no skipping.
+- **Five depth tiers.** RAPID for screening papers and vendor claims, LITE, STANDARD, COMPREHENSIVE with recursive decomposition, and PSYCH for behavioral profiling (OCEAN, Dark Triad, MICE).
+- **Calibration enforced in code.** Bayesian hypothesis tracking with likelihood-ratio caps by phase, one data point per update, a mandatory adversarial hypothesis, and no hypothesis above 0.80 posterior without a disconfirming test. Candidate hypotheses are promoted only above a coverage threshold, which prevents hypothesis explosion.
+- **Real modeling tools.** 14 Python CLIs: ARX/ARMAX/NARMAX system identification with bootstrap uncertainty, ARIMA/ETS/CatBoost forecasting, spectral analysis, time-series diagnostics, conformal and CQR prediction intervals, and System Dynamics, Monte Carlo, agent-based and discrete-event simulation with sensitivity analysis.
+- **15 specialist sub-agents** under one orchestrator, one per phase plus a cognitive-bias auditor, session clerk and research scout. 41 reference documents supply domain knowledge, and causal graphs and state machines are rendered as Mermaid diagrams.
+- **Survives context loss.** All session state routes through files on disk, so a context reset mid-analysis resumes where it left off.
 
 ### Applied Systems
 
