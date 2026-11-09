@@ -64,7 +64,13 @@ If any of that fits, [email me](mailto:nikolas.markou@electiconsulting.com) with
 ### Frameworks
 
 ### [dl_techniques](https://github.com/NikolasMarkou/dl_techniques)
-Production-ready deep learning framework consolidating 150+ model implementations, 290+ specialized layers, and 20+ loss functions into a single Keras 3 / TensorFlow library. Factory system for single-line component swapping (15+ attention mechanisms, 10+ FFN types). Includes the novel AnyLoss framework for direct metric optimization on imbalanced datasets and a six-dimensional ModelAnalyzer for training diagnostics. 600+ tests. Sponsored by Electi Consulting.
+Keras 3 / TensorFlow 2.18 library that consolidates research scattered across papers and one-off repositories into one tested codebase: 100+ model packages, ~380 layer modules, 56 loss modules, and 90+ training pipelines. 7,400+ commits, Apache 2.0, sponsored by Electi Consulting.
+
+- **Models across 13 families.** Language (Gemma, Qwen3, Mamba, Zamba2, ModernBERT, ColBERT, Byte Latent Transformer, HRM, Tiny Recursive Model), vision (ConvNeXt V1/V2, DINO v1-v3, Swin, BEiT, MAE, YOLOv12, DETR, Depth Anything, SuperPoint/LightGlue), vision-language and generative (CLIP, MobileCLIP, FastVLM, SAM 1/2/3, SD3 MMDiT, DiT), time series (TiRex, N-BEATS, DeepAR, xLSTM), world models (Video-JEPA, LeVJEPA, LEWM), plus graph, KAN, neural computer, and tabular architectures.
+- **Registry-driven layer factories.** Swap components by string key: 37 attention mechanisms, 22 FFN variants, 19 normalizations, 25 activations, 16 embeddings, 12 transformer blocks, plus MoE, normalizing flows, and mixture density layers.
+- **Losses and optimizers.** AnyLoss turns 16 confusion-matrix metrics (F1, MCC, balanced accuracy) into differentiable losses for imbalanced data. Calibration-aware and domain-specific losses, and custom optimizers (Muon, VSGD, SGLD, Gefen) alongside WW-PGD, a WeightWatcher spectral projection applied during training.
+- **ModelAnalyzer.** Multi-model diagnostics across weight health, calibration, information flow, training dynamics, spectral analysis (WeightWatcher-style generalization estimates without test data), and diagonal Fisher information.
+- **Verified, not asserted.** 1,700+ test modules mirroring the source tree. Ports are checked numerically against reference implementations, some committed as executable oracles. Backed by 130 research write-ups and 5 LaTeX papers built against the codebase.
 
 ### [fsm_llm](https://github.com/NikolasMarkou/fsm_llm)
 Python framework combining Finite State Machines with Large Language Models for structured, stateful conversational AI. FSMs defined declaratively in JSON, JsonLogic-based conditional transitions, hierarchical FSM stacking, and lifecycle hooks. Supports 100+ LLM providers via LiteLLM. Built-in prompt injection defense and token-aware history management.
