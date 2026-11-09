@@ -73,7 +73,14 @@ Keras 3 / TensorFlow 2.18 library that consolidates research scattered across pa
 - **Verified, not asserted.** 1,700+ test modules mirroring the source tree. Ports are checked numerically against reference implementations, some committed as executable oracles. Backed by 130 research write-ups and 5 LaTeX papers built against the codebase.
 
 ### [fsm_llm](https://github.com/NikolasMarkou/fsm_llm)
-Python framework combining Finite State Machines with Large Language Models for structured, stateful conversational AI. FSMs defined declaratively in JSON, JsonLogic-based conditional transitions, hierarchical FSM stacking, and lifecycle hooks. Supports 100+ LLM providers via LiteLLM. Built-in prompt injection defense and token-aware history management.
+Python framework for conversations and agents that must follow a fixed structure. The flow is a finite state machine in JSON; the LLM only does the language work inside each state. Transitions are deterministic and unit-testable, and the model is consulted only when two rules tie. v0.12, Apache 2.0, Python 3.10 to 3.12, 1,600+ commits.
+
+- **Two-pass turn model.** Pass 1 extracts data into context, JsonLogic rules pick the next state, Pass 2 replies from the state the conversation actually landed in. Handlers at 8 lifecycle points, FSM stacking for sub-flows, intent classification and routing, streaming, session save and restore, and native tool calling or JSON-schema output per state.
+- **Agents.** 18 patterns behind one factory (ReAct, ReWOO, Reflexion, plan-and-execute, debate, orchestrator, swarm, maker-checker, native function calling, and more), plus agent graphs, human approval, memory, MCP, A2A, and a meta-builder that designs FSMs, workflows and agents by chat.
+- **Reasoning and workflows.** A solver that selects one of 9 reasoning strategies, runs it as stacked FSMs, validates and retries. An async workflow engine with 11 step types (LLM, agent, conversation, parallel, retry, switch, timer, event).
+- **Knowledge and skills.** Reads, validates and writes Open Knowledge Format bundles, and loads Agent Skills (`SKILL.md`) folders as read-only agent tools. All bundle and skill text is treated as untrusted data and never executed.
+- **Operations.** Any LiteLLM provider behind a single LLM layer with usage counters, internal and secret-looking context keys kept out of prompts, a FastAPI monitoring dashboard with optional OpenTelemetry export, and CLI tools for chat, validation, visualization and evaluation.
+- **Measured honestly.** 11,400+ offline tests on a fake model, 100 runnable examples in 8 categories that double as evaluation baselines, and an eval harness reporting pass rates with Wilson confidence intervals over repeated scripted runs.
 
 ### Research and Novel Architectures
 
