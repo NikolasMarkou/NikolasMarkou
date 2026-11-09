@@ -64,7 +64,7 @@ If any of that fits, [email me](mailto:nikolas.markou@electiconsulting.com) with
 ### Frameworks
 
 ### [dl_techniques](https://github.com/NikolasMarkou/dl_techniques)
-Keras 3 / TensorFlow 2.18 library that consolidates research scattered across papers and one-off repositories into one tested codebase: 100+ model packages, ~380 layer modules, 56 loss modules, and 90+ training pipelines. 7,400+ commits, Apache 2.0, sponsored by Electi Consulting.
+Keras 3 / TensorFlow 2.18 library that consolidates research scattered across papers and one-off repositories into one tested codebase: 100+ model packages, ~380 layer modules, 56 loss modules, and 90+ training pipelines. Apache 2.0, sponsored by Electi Consulting.
 
 - **Models across 13 families.** Language (Gemma, Qwen3, Mamba, Zamba2, ModernBERT, ColBERT, Byte Latent Transformer, HRM, Tiny Recursive Model), vision (ConvNeXt V1/V2, DINO v1-v3, Swin, BEiT, MAE, YOLOv12, DETR, Depth Anything, SuperPoint/LightGlue), vision-language and generative (CLIP, MobileCLIP, FastVLM, SAM 1/2/3, SD3 MMDiT, DiT), time series (TiRex, N-BEATS, DeepAR, xLSTM), world models (Video-JEPA, LeVJEPA, LEWM), plus graph, KAN, neural computer, and tabular architectures.
 - **Registry-driven layer factories.** Swap components by string key: 37 attention mechanisms, 22 FFN variants, 19 normalizations, 25 activations, 16 embeddings, 12 transformer blocks, plus MoE, normalizing flows, and mixture density layers.
@@ -73,7 +73,7 @@ Keras 3 / TensorFlow 2.18 library that consolidates research scattered across pa
 - **Verified, not asserted.** 1,700+ test modules mirroring the source tree. Ports are checked numerically against reference implementations, some committed as executable oracles. Backed by 130 research write-ups and 5 LaTeX papers built against the codebase.
 
 ### [fsm_llm](https://github.com/NikolasMarkou/fsm_llm)
-Python framework for conversations and agents that must follow a fixed structure. The flow is a finite state machine in JSON; the LLM only does the language work inside each state. Transitions are deterministic and unit-testable, and the model is consulted only when two rules tie. v0.12, Apache 2.0, Python 3.10 to 3.12, 1,600+ commits.
+Python framework for conversations and agents that must follow a fixed structure. The flow is a finite state machine in JSON; the LLM only does the language work inside each state. Transitions are deterministic and unit-testable, and the model is consulted only when two rules tie. v0.12, Apache 2.0, Python 3.10 to 3.12.
 
 - **Two-pass turn model.** Pass 1 extracts data into context, JsonLogic rules pick the next state, Pass 2 replies from the state the conversation actually landed in. Handlers at 8 lifecycle points, FSM stacking for sub-flows, intent classification and routing, streaming, session save and restore, and native tool calling or JSON-schema output per state.
 - **Agents.** 18 patterns behind one factory (ReAct, ReWOO, Reflexion, plan-and-execute, debate, orchestrator, swarm, maker-checker, native function calling, and more), plus agent graphs, human approval, memory, MCP, A2A, and a meta-builder that designs FSMs, workflows and agents by chat.
