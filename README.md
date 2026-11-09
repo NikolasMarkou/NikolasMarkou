@@ -96,7 +96,14 @@ Bias-free CNN library for blind image denoising, based on the CVPR 2020 bias-fre
 ### AI Engineering Tooling
 
 ### [iterative-planner](https://github.com/NikolasMarkou/iterative-planner)
-Claude Code skill that replaces linear AI coding execution with a disciplined state-machine cycle: Explore, Plan, Execute, Reflect, Re-plan. Filesystem-based persistent memory survives context window exhaustion. Enforces complexity budgets, a 2-fix autonomy leash, decision anchoring in code, and cross-plan knowledge transfer. Designed to prevent the runaway fix accumulation and context rot that derail complex AI-assisted tasks.
+Claude Code skill that keeps an agent from losing the plot on long, hard tasks. The context window is treated as volatile RAM and the filesystem as disk: every finding, decision, pivot and dead end is written to a plan directory as it happens and re-read on a schedule. Work runs through a six-state machine: Explore, Plan, Execute, Reflect, Pivot, Close. v2.71, Apache 2.0, 1,191 tests, plain Node.js scripts with zero dependencies.
+
+- **Explore before acting.** The agent reads the codebase first and cannot plan until it holds at least 3 indexed findings. The plan comes back for approval before any code changes, with success criteria, assumptions, failure modes and a pre-mortem.
+- **Hard limits on runaway fixes.** Each step is committed on success. A failing step gets 2 fix attempts (revert, delete or minimal change), then the agent reverts and asks. A 10-line rule, a 3-strike rule that forces a pivot, a complexity budget (max 3 new files, 2 new abstractions), and caps on re-plans and review rounds.
+- **Memory that compounds.** Closed plans merge into cross-plan ledgers (findings, decisions, lessons) and a curated system atlas that the next plan reads first, so each task starts already knowing the codebase.
+- **Auditable on disk.** Decisions that survive a failed alternative are anchored in code as `DECISION` comments. Every edit is logged with a blast-radius score, and a validator checks protocol compliance and hard-blocks a step that breaks the leash or iteration caps.
+- **Optional sub-agents.** An orchestrator dispatches 7 specialists (parallel explorers, plan writer, executor, verifier, adversarial reviewer, hygiene sweep, archivist). Six presentation contracts stop it from summarizing away verifier tables and reviewer concerns. Without the agents, one thread runs the same state machine.
+- **Dashboard.** A local, offline site with a live view of the running plan, every plan and ledger, search, and token usage per plan and per agent.
 
 ### [epistemic-deconstructor](https://github.com/NikolasMarkou/epistemic-deconstructor)
 Claude Code skill implementing a 6-phase scientific protocol for reverse engineering unknown systems: boundary mapping, causal analysis, parametric identification, and validated model synthesis. Backed by 7 Python CLI tools (~6,300 lines), Bayesian hypothesis tracking with calibrated evidence rules, conformal prediction, and 27 reference documents. 191 unit tests. Scales across five tiers from 30-minute claim validation to 20+ hour comprehensive analysis.
